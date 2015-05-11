@@ -307,3 +307,12 @@ endif
 if exists("&colorcolumn")
    set colorcolumn=79
 endif
+
+if ! has('gui')
+"  :set background=dark
+"  default, dark, darkblue, desert
+  :colorscheme desert
+endif
+
+:set list
+
